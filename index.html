@@ -379,8 +379,13 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Sina Ghanbari Saheli. All Rights Reserved.</p>
+      <p>Copyright &#169; <span id="currentYear"></span> Sina Ghanbari Saheli. All Rights Reserved.</p>
     </footer>
+    
+    <script>
+        // JavaScript to dynamically set the current year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
 
     <!-- Video Modal -->
     <div id="videoModal" class="modal">
